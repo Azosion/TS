@@ -3,32 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Gallery</title>
+        <meta name="description" content="Gallery Page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-
-
-
-    <div class="topnav">
-        <a class="active" href="Firstweb.html">Home</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-
-
-
-
-
+        <link rel="stylesheet" href="styles.css">
         <style>
 
             body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
             }
 
-
+            body.fade-out {
+                opacity: 0;
+            }
 
             /* Add a black background color to the top navigation */
             .topnav {
@@ -59,85 +49,34 @@
             }
             
         </style>
-
-
-    </div> 
-
-
-    <div class = "body1">
-
-        <link href="styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-
-
-
-        <style>
-            .body1 {
-
-                font-family: 'Times New Roman', Times, serif;
-
-                font-size: 120px;
-
-                text-align: center;
-
-                margin-top: 25px;
-
-                text-underline-offset: 30px;
-
-                color: #222222;
-
-                text-decoration: underline;
-
-                text-decoration-color: #222222;
-
-            }
-        </style>
-
-
-    <body>
-        Gallery
+        <script src="fadein.ts" type="module" defer></script>
+        <script src="fadeout.ts" type="module" defer></script>
+    </head>
+    <body class="fade-out" style="opacity: 0;">
+        <div class="topnav">
+            <a class="active" href="Home.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div> 
+        <div class="body1">
+            <link href="styles.css" rel="stylesheet" />
+            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+            <Body>Gallery</Body>
+        </div>
+        <div>
+            <img src="/photo/1.JPG"> 
+            <img src="/photo/2.JPG"> 
+            <img src="/photo/3.JPG"> 
+            <img src="/photo/4.JPG">
+            <img src="/photo/5.JPG"> 
+            <img src="/photo/6.JPG"> 
+            <img src="/photo/7.JPG"> 
+            <img src="/photo/8.JPG"> 
+            
+        </div>
     </body>
-
-    </div>
-
-<div>
-
-    <style>
-        img {
-            max-width: 40%;
-            height: auto;
-            margin-left: 5%;
-            margin-top: 5%
-        }
-    </style>
-
-    <img src="/photo/1.JPG"> 
-
-    <img src="/photo/2.JPG"> 
-    
-    <img src="/photo/3.JPG"> 
-
-    <img src="/photo/4.JPG">
-    
-    <img src="/photo/5.JPG"> 
-
-    <img src="/photo/6.JPG"> 
-
-    <img src="/photo/7.JPG"> 
-
-    <img src="/photo/8.JPG"> 
-
-</div>
- 
-
-
-    <body>
-        <script src="" async defer></script>
-    </body>
-
-
 
 </html>

@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity 0.5s ease-in-out; /* Ensure smooth transition */
+}
+
+body.fade-out {
+    opacity: 0; /* Fade-out effect */
+}
+
+body:not(.fade-out) {
+    opacity: 1; /* Fade-in effect */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #353535;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #044caa;
+    color: white;
+}
+
+.body1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-underline-offset: 30px;
+    color: #222222;
+    text-decoration: underline;
+    text-decoration-color: #222222;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.desc {
+    position: absolute; /* or relative if needed */
+    left: calc(50% / 2); /* Moves the text halfway to the center */
+    transform: translateX(-50%);
+    font-size: 200%;
+    margin-top: -95%;
+  }
+  
