@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.classList.remove('fade-out');
         document.body.style.opacity = '1'; // Explicitly set opacity to 1
-    }, 50); // Small delay to ensure the transition is visible
+    }, 200); // Small delay to ensure the transition is visible
 });

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.classList.add('fade-out');
                 setTimeout(() => {
                     window.location.href = href;
-                }, 500); // Match the transition duration
+                }, 900); // Match the transition duration
             }
         });
     });

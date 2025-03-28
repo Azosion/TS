@@ -12,6 +12,7 @@ const mimeTypes: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".png": "image/png",
+  ".webp": "image/webp"
 };
 
 async function handler(req: Request): Promise<Response> {

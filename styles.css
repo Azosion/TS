@@ -44,20 +44,59 @@ body:not(.fade-out) {
     font-family: 'Times New Roman', Times, serif;
     font-size: 120px;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 5%;
     text-underline-offset: 30px;
     color: #222222;
     text-decoration: underline;
     text-decoration-color: #222222;
 }
 
-img {
-    max-width: 40%;
-    height: auto;
-    margin-left: 5%;
-    margin-top: 5%;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 5%; /* Space between images */
+    justify-items: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    width: 100%;
+    max-width: 1600px; /* Optional: Limits the maximum width of the container */
+    min-width: none;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 15px; /* Adds horizontal padding for consistent margins */
+}
+
+.image-item {
+    text-align: center;
+    width: 100%;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensures images do not exceed their container's width */
+}
+
+.caption {
+    margin-top: 5%;
+    font-size:  50px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
 
 .desc {
     position: absolute; /* or relative if needed */
